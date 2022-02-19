@@ -2,7 +2,7 @@ const GRP_SAKURA_CLASS = "grp_sakura";
 const GRP_HINATA_CLASS = "grp_hinata";
 const GRP_NAME_SAKURA = "櫻坂46";
 const GRP_NAME_HINATA = "日向坂46";
-var sakuraMusicNameArray = ["サイレントマジョリティー", "ガラスを割れ！"];
+var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても"];
 var hinataMusicNameArray = ["キュン"];
 
 /**
