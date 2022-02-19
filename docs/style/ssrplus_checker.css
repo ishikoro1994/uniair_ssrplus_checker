@@ -23,3 +23,48 @@
 .name {
   width: 6rem;
 }
+
+.member_name {
+  text-align: left;
+}
+
+.ssr,
+.ssr_plus {
+  text-align: right;
+}
+
+/*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 1025px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 23px;
+  }
+
+  p[name="scene_table"] {
+    font-size: 16px;
+  }
+}
+
+/*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
+@media screen and (max-width: 1024px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 23px;
+  }
+
+  p[name="scene_table"] {
+    font-size: 16px;
+  }
+}
+
+/*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
+@media screen and (max-width: 599px) {
+  /*ヘッダタイトル*/
+  #head_title {
+    font-size: 18px;
+  }
+
+  p[name="scene_table"] {
+    font-size: 12px;
+  }
+}
