@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#point_list_table > thead {
+  background: #5eb954;
+}
+
+.grp_sakura {
+  background: #ffdbed;
+}
+
+.grp_hinata {
+  background: #7cc7e8;
+}
+
+.pt_row {
+  text-align: right;
+}
+
+.grp {
+  text-align: center;
+}
+
+.name {
+  width: 6rem;
+}
