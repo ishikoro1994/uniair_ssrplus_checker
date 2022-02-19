@@ -41,7 +41,11 @@
   }
 
   table[name="scene_table"] {
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  #target {
+    display: flex;
   }
 }
 
@@ -53,7 +57,11 @@
   }
 
   table[name="scene_table"] {
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  #target {
+    display: flex;
   }
 }
 
@@ -67,4 +75,8 @@
   table[name="scene_table"] {
     font-size: 10px;
   }
+
+  /* #target {
+    display: block;
+  } */
 }
