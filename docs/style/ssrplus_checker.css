@@ -123,18 +123,21 @@
   }
 
   #annotation {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #ss {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .head_member {
-    width: 58px;
+    width: 60px;
   }
 
-  .head_ssr,
+  .head_ssr {
+    width: 29px;
+  }
+
   .head_ssr_plus {
     width: 33px;
   }
