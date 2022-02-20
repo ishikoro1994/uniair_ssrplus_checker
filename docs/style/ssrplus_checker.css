@@ -64,6 +64,10 @@
   .head_ssr_plus {
     width: 50px;
   }
+
+  #contact {
+    font-size: 14px;
+  }
 }
 
 /*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
@@ -97,6 +101,10 @@
   .head_ssr_plus {
     width: 50px;
   }
+
+  #contact {
+    font-size: 14px;
+  }
 }
 
 /*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
@@ -129,5 +137,9 @@
   .head_ssr,
   .head_ssr_plus {
     width: 33px;
+  }
+
+  #contact {
+    font-size: 12px;
   }
 }
