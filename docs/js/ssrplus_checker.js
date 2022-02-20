@@ -3,7 +3,7 @@ const GRP_HINATA_CLASS = "grp_hinata";
 const GRP_NAME_SAKURA = "櫻坂46";
 const GRP_NAME_HINATA = "日向坂46";
 var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても"];
-var hinataMusicNameArray = ["キュン"];
+var hinataMusicNameArray = ["キュン","JOYFUL LOVE","期待していない自分","君に話しておきたいこと","ハッピーオーラ","キツネ"];
 
 /**
  * ページ読み込み時
@@ -38,7 +38,7 @@ async function LoadCsv(grpName, array) {
 
         await $.get(filePath, readCsvBindedFunc(musicName, grpName), 'text');
     }
-    btnTestClick();
+    createCanvas();
 }
 
 function makeArrayList(musicName, grpName, data) {
@@ -59,11 +59,11 @@ function makeArrayList(musicName, grpName, data) {
     listStr += '        <th colspan="5">' + musicName + '</th>';
     listStr += '      </tr>';
     listStr += '      <tr class="'+ grpClass + '">';
-    listStr += '        <th class="scene_color">色</th>';
-    listStr += '        <th>メンバー</th>';
-    listStr += '        <th>SSR</th>';
-    listStr += '        <th>SSR+</th>';
-    listStr += '        <th class="has_checkbox">✅</th>';
+    listStr += '        <th class="head_scene_color">色</th>';
+    listStr += '        <th class="head_member">メンバー</th>';
+    listStr += '        <th class="head_ssr">SSR</th>';
+    listStr += '        <th class="head_ssr_plus">SSR+</th>';
+    listStr += '        <th class="head_has_checkbox">✅</th>';
     listStr += '      </tr>';
     listStr += '    </thead>';
 
@@ -78,7 +78,7 @@ function makeArrayList(musicName, grpName, data) {
         rowStr += '  <td class="ssr">' + row[2].replace('\r', '') + '</td>';
         rowStr += '  <td class="ssr_plus">' + row[3].replace('\r', '') + '</td>';
         rowStr += '  <td>';
-        rowStr += '    <input name="has_scene_check" type="checkbox" style="transform: scale(1.3);" onclick="btnTestClick()">';
+        rowStr += '    <input name="has_scene_check" type="checkbox" style="transform: scale(1.3);" onclick="createCanvas()">';
         rowStr += '  </td>';
         rowStr += '</tr>';
         listStr += rowStr;
@@ -92,7 +92,7 @@ function makeArrayList(musicName, grpName, data) {
     return true;
 }
 
-function btnTestClick() {
+function createCanvas() {
     //ボタンを押下した際にダウンロードする画像を作る
     html2canvas(document.querySelector("#target")).then(canvas => {
         var imgData = canvas.toDataURL();
@@ -100,4 +100,17 @@ function btnTestClick() {
     });
 
     return false;
+}
+
+function setFileName() {
+    var fileName = "ssrplus_checker_";
+    var now = new Date();
+    fileName += now.getFullYear();
+    fileName += ("0" + (now.getMonth()+1)).slice(-2);
+    fileName += ("0" + now.getDate()).slice(-2);
+    fileName += ("0" + now.getHours()).slice(-2);
+    fileName += ("0" + now.getMinutes()).slice(-2);
+    fileName += ("0" + now.getSeconds()).slice(-2);
+
+    document.getElementById("ss").download = fileName + ".png";
 }

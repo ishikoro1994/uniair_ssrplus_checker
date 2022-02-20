@@ -4,7 +4,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./js/ssrplus_checker.js"></script>
         <script src="./js/html2canvas.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script> -->
         <title>ユニエア　SSR+チェックリスト</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="twitter:card" content="summary">
@@ -13,9 +12,9 @@
     </head>
     <body>
         <h1 id="head_title">ユニエア　SSR+チェックリスト</h1>
-        <a href="" id="ss" download="html_ss.png">
-            <button id="btn_test">画像ダウンロード</button>
-        </a>
+        <label id="annotation">(期待値が1未満は除外)</label>
+        </br>
+        <a href="" id="ss" download="" onclick="setFileName()">画像としてダウンロード</a>
         <div id="target" style="display: flex;">
             <div id="sakura_list"></div>
             <div id="hinata_list"></div>

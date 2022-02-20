@@ -47,6 +47,23 @@
   #sakura_list {
     margin-right: 20px;
   }
+
+  #annotation {
+    font-size: 15px;
+  }
+
+  #ss {
+    font-size: 16px;
+  }
+
+  .head_member {
+    width: 95px;
+  }
+
+  .head_ssr,
+  .head_ssr_plus {
+    width: 50px;
+  }
 }
 
 /*ウィンドウ幅が最大767pxまでの場合に適用 タブレット*/
@@ -63,6 +80,23 @@
   #sakura_list {
     margin-right: 20px;
   }
+
+  #annotation {
+    font-size: 15px;
+  }
+
+  #ss {
+    font-size: 16px;
+  }
+
+  .head_member {
+    width: 90px;
+  }
+
+  .head_ssr,
+  .head_ssr_plus {
+    width: 50px;
+  }
 }
 
 /*ウィンドウ幅が最大479pxまでの場合に適用 スマホ*/
@@ -78,5 +112,22 @@
 
   #sakura_list {
     margin-right: 10px;
+  }
+
+  #annotation {
+    font-size: 10px;
+  }
+
+  #ss {
+    font-size: 11px;
+  }
+
+  .head_member {
+    width: 58px;
+  }
+
+  .head_ssr,
+  .head_ssr_plus {
+    width: 33px;
   }
 }
