@@ -38,7 +38,7 @@ async function LoadCsv(grpName, array) {
 
         await $.get(filePath, readCsvBindedFunc(musicName, grpName), 'text');
     }
-    createCanvas();
+    // createCanvas();
 }
 
 function makeArrayList(musicName, grpName, data) {
@@ -78,7 +78,7 @@ function makeArrayList(musicName, grpName, data) {
         rowStr += '  <td class="ssr">' + row[2].replace('\r', '') + '</td>';
         rowStr += '  <td class="ssr_plus">' + row[3].replace('\r', '') + '</td>';
         rowStr += '  <td>';
-        rowStr += '    <input name="has_scene_check" type="checkbox" style="transform: scale(1.3);" onclick="createCanvas()">';
+        rowStr += '    <input name="has_scene_check" type="checkbox" style="transform: scale(1.3);">';
         rowStr += '  </td>';
         rowStr += '</tr>';
         listStr += rowStr;
@@ -102,7 +102,7 @@ function createCanvas() {
     return false;
 }
 
-function setFileName() {
+async function setFileName() {
     var fileName = "ssrplus_checker_";
     var now = new Date();
     fileName += now.getFullYear();
@@ -113,4 +113,6 @@ function setFileName() {
     fileName += ("0" + now.getSeconds()).slice(-2);
 
     document.getElementById("ss").download = fileName + ".png";
+
+    await createCanvas();
 }
