@@ -40,12 +40,25 @@
     font-size: 23px;
   }
 
+  p[name="scene_list"] {
+    margin-right: 15px;
+  }
+
   table[name="scene_table"] {
     font-size: 17px;
   }
 
+  #target {
+    display: block;
+  }
+
   #sakura_list {
     margin-right: 20px;
+    display: flex;
+  }
+
+  #hinata_list {
+    display: flex;
   }
 
   #annotation {
@@ -77,12 +90,25 @@
     font-size: 23px;
   }
 
+  p[name="scene_list"] {
+    margin-right: 15px;
+  }
+
   table[name="scene_table"] {
     font-size: 17px;
   }
 
+  #target {
+    display: block;
+  }
+
   #sakura_list {
     margin-right: 20px;
+    display: flex;
+  }
+
+  #hinata_list {
+    display: flex;
   }
 
   #annotation {
@@ -118,8 +144,17 @@
     font-size: 11px;
   }
 
+  #target {
+    display: flex;
+  }
+
   #sakura_list {
     margin-right: 10px;
+    display: block;
+  }
+
+  #hinata_list {
+    display: block;
   }
 
   #annotation {
