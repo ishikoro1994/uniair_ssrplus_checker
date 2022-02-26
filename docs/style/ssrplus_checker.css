@@ -140,6 +140,10 @@
     font-size: 18px;
   }
 
+  p[name="scene_list"] {
+    margin-right: 5px;
+  }
+
   table[name="scene_table"] {
     font-size: 11px;
   }
@@ -166,7 +170,7 @@
   }
 
   .head_member {
-    width: 65px;
+    width: 70px;
   }
 
   .head_ssr {
