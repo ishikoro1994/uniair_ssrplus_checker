@@ -145,7 +145,7 @@
   }
 
   table[name="scene_table"] {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   #target {
@@ -153,7 +153,7 @@
   }
 
   #sakura_list {
-    margin-right: 10px;
+    margin-right: 2px;
     display: block;
   }
 
