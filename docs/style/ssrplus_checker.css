@@ -49,9 +49,9 @@
   }
 
   #target {
-    /* display: block; */
-    display: flex;
-    width: 600px;
+    display: block;
+    /* display: flex;
+    width: 600px; */
   }
 
   #sakura_list {
@@ -101,9 +101,9 @@
   }
 
   #target {
-    /* display: block; */
-    display: flex;
-    width: 600px;
+    display: block;
+    /* display: flex;
+    width: 600px; */
   }
 
   #sakura_list {
