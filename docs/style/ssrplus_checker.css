@@ -37,7 +37,7 @@
 @media screen and (min-width: 1025px) {
   /*ヘッダタイトル*/
   #head_title {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   p[name="scene_list"] {
@@ -45,7 +45,7 @@
   }
 
   table[name="scene_table"] {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #target {
@@ -89,7 +89,7 @@
 @media screen and (max-width: 1024px) {
   /*ヘッダタイトル*/
   #head_title {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   p[name="scene_list"] {
@@ -97,7 +97,7 @@
   }
 
   table[name="scene_table"] {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #target {
