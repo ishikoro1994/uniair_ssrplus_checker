@@ -17,6 +17,14 @@
         <h1 id="head_title">ユニエア　SSR+チェックリスト</h1>
         <label id="annotation">(期待値が1未満は除外)</label>
         </br>
+        <div id="select_disp">
+            <input type="radio" name="rdo_select_disp" id="rdo_select_disp_all" value="all" checked>
+            <label for="rdo_select_disp_all">全て表示</label>
+            <input type="radio" name="rdo_select_disp" id="rdo_select_disp_have" value="have">
+            <label for="rdo_select_disp_have">所持のみ表示</label>
+            <input type="radio" name="rdo_select_disp" id="rdo_select_disp_not_have" value="not_have">
+            <label for="rdo_select_disp_not_have">未所持のみ表示</label>
+        </div>
         <a href="" id="ss" download="" onclick="setFileName()">画像としてダウンロード</a>
         <div id="target">
             <div id="sakura_list"></div>

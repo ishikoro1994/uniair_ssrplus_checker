@@ -75,8 +75,17 @@ function makeArrayList(musicName, grpName, data) {
         rowStr += '<tr>';
         rowStr += '  <td style="background-color: ' + row[0].replace('\r', '') + ';"></td>';
         rowStr += '  <td class="member_name">' + row[1].replace('\r', '') + '</td>';
-        rowStr += '  <td class="ssr">' + row[2].replace('\r', '') + '</td>';
-        rowStr += '  <td class="ssr_plus">' + row[3].replace('\r', '') + '</td>';
+
+        var skillClass = '';
+        if (Number(row[2].replace('\r', '')) == 3.68) skillClass = 'skill368';
+        else if (Number(row[2].replace('\r', '')) >= 3) skillClass = 'skill_over3';
+        rowStr += '  <td class="ssr ' + skillClass + '">' + row[2].replace('\r', '') + '</td>';
+
+        skillClass = '';
+        if (Number(row[3].replace('\r', '')) == 3.68) skillClass = 'skill368';
+        else if (Number(row[3].replace('\r', '')) >= 3) skillClass = 'skill_over3';
+        rowStr += '  <td class="ssr_plus ' + skillClass + '">' + row[3].replace('\r', '') + '</td>';
+
         rowStr += '  <td>';
         rowStr += '    <input name="has_scene_check" type="checkbox" style="transform: scale(1.3);" onclick="createCanvas()">';
         rowStr += '  </td>';
@@ -115,4 +124,28 @@ function setFileName() {
     document.getElementById("ss").download = fileName + ".png";
 
     return false;
+}
+
+$(function() {
+    $('[name="rdo_select_disp"]').on('change', function() {
+        SwitchDisp();
+    });
+});
+
+function SwitchDisp() {
+    var selectDisp = $('[name="rdo_select_disp"]:checked')[0].value;
+    var checkList = $('[name="has_scene_check"]');
+    for (var i = 0; i < checkList.length; i++) {
+        var displayStyle = '';
+        switch (selectDisp) {
+            case 'have':
+                if (!$('[name="has_scene_check"]')[i].checked) displayStyle = 'none';
+                break;
+            case 'not_have':
+                if ($('[name="has_scene_check"]')[i].checked) displayStyle = 'none';
+                break;
+        }
+        $('[name="has_scene_check"]')[i].closest('tr').style.display = displayStyle;
+    }
+    createCanvas();
 }

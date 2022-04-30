@@ -33,6 +33,14 @@
   text-align: right;
 }
 
+.skill368 {
+  background: gold;
+}
+
+.skill_over3 {
+  background: lemonchiffon;
+}
+
 /*ウィンドウ幅が767px以上の場合に適用*/
 @media screen and (min-width: 1025px) {
   /*ヘッダタイトル*/
