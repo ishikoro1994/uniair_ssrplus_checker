@@ -63,7 +63,7 @@
   #target {
     /* display: block; */
     display: flex;
-    width: 375px;
+    width: 600px;
   }
 
   #sakura_list {
@@ -115,7 +115,7 @@
   #target {
     /* display: block; */
     display: flex;
-    width: 375px;
+    width: 600px;
   }
 
   #sakura_list {
@@ -166,6 +166,7 @@
 
   #target {
     display: flex;
+    width: 375px;
   }
 
   #sakura_list {
