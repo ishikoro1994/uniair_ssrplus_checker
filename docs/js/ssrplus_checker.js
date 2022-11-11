@@ -2,10 +2,10 @@ const GRP_SAKURA_CLASS = "grp_sakura";
 const GRP_HINATA_CLASS = "grp_hinata";
 const GRP_NAME_SAKURA = "櫻坂46";
 const GRP_NAME_HINATA = "日向坂46";
-// var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても", "世界には愛しかない", "誰がその鐘を鳴らすのか？"];
-// var hinataMusicNameArray = ["キュン","JOYFUL LOVE","期待していない自分","君に話しておきたいこと","ハッピーオーラ","キツネ", "ドレミソラシド", "こんなに好きになっちゃっていいの？"];
-var sakuraMusicNameArray = ["Nobody’s fault"];
-var hinataMusicNameArray = ["ソンナコトナイヨ"];
+// var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても", "世界には愛しかない", "誰がその鐘を鳴らすのか？", "Nobody’s fault"];
+// var hinataMusicNameArray = ["キュン","JOYFUL LOVE","期待していない自分","君に話しておきたいこと","ハッピーオーラ","キツネ", "ドレミソラシド", "こんなに好きになっちゃっていいの？", "ソンナコトナイヨ"];
+var sakuraMusicNameArray = ["なぜ 恋をして来なかったんだろう？"];
+var hinataMusicNameArray = ["青春の馬"];
 
 /**
  * ページ読み込み時
@@ -79,12 +79,14 @@ function makeArrayList(musicName, grpName, data) {
         rowStr += '  <td class="member_name">' + row[1].replace('\r', '') + '</td>';
 
         var skillClass = '';
-        if (Number(row[2].replace('\r', '')) == 3.68) skillClass = 'skill368';
+        if (Number(row[2].replace('\r', '')) == 3.72) skillClass = 'skill372';
+        else if (Number(row[2].replace('\r', '')) == 3.68) skillClass = 'skill368';
         else if (Number(row[2].replace('\r', '')) >= 3) skillClass = 'skill_over3';
         rowStr += '  <td class="ssr ' + skillClass + '">' + row[2].replace('\r', '') + '</td>';
 
         skillClass = '';
-        if (Number(row[3].replace('\r', '')) == 3.68) skillClass = 'skill368';
+        if (Number(row[3].replace('\r', '')) == 3.72) skillClass = 'skill372';
+        else if (Number(row[3].replace('\r', '')) == 3.68) skillClass = 'skill368';
         else if (Number(row[3].replace('\r', '')) >= 3) skillClass = 'skill_over3';
         rowStr += '  <td class="ssr_plus ' + skillClass + '">' + row[3].replace('\r', '') + '</td>';
 
