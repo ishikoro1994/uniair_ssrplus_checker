@@ -2,10 +2,10 @@ const GRP_SAKURA_CLASS = "grp_sakura";
 const GRP_HINATA_CLASS = "grp_hinata";
 const GRP_NAME_SAKURA = "櫻坂46";
 const GRP_NAME_HINATA = "日向坂46";
-// var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても", "世界には愛しかない", "誰がその鐘を鳴らすのか？", "Nobody’s fault"];
-// var hinataMusicNameArray = ["キュン","JOYFUL LOVE","期待していない自分","君に話しておきたいこと","ハッピーオーラ","キツネ", "ドレミソラシド", "こんなに好きになっちゃっていいの？", "ソンナコトナイヨ"];
-var sakuraMusicNameArray = ["なぜ 恋をして来なかったんだろう？"];
-var hinataMusicNameArray = ["青春の馬"];
+// var sakuraMusicNameArray = ["サイレントマジョリティー","ガラスを割れ！","二人セゾン","Nobody","アンビバレント","風に吹かれても", "世界には愛しかない", "誰がその鐘を鳴らすのか？", "Nobody’s fault", "なぜ 恋をして来なかったんだろう？"];
+// var hinataMusicNameArray = ["キュン","JOYFUL LOVE","期待していない自分","君に話しておきたいこと","ハッピーオーラ","キツネ", "ドレミソラシド", "こんなに好きになっちゃっていいの？", "ソンナコトナイヨ", "青春の馬"];
+var sakuraMusicNameArray = ["Buddies"];
+var hinataMusicNameArray = ["アザトカワイイ"];
 
 /**
  * ページ読み込み時
